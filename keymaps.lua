@@ -41,28 +41,9 @@ local function keymap(sourceKey, sourceMod, targetKey, targetMod, repeatDelay)
     end
 end
 
--- ------------------
--- move
--- ------------------
--- local arrows = {
---     h = 'left',
---     j = 'down',
---     k = 'up',
---     l = 'right'
--- }
--- for k, v in pairs(arrows) do
---     keymap(k, 'alt', v, '')
---     keymap(k, 'alt+shift', v, 'alt')
---     keymap(k, 'alt+shift+ctrl', v, 'shift')
--- end
-
--- keymap('y', 'alt', 'home', '')
--- keymap('u', 'alt', 'end', '')
--- keymap('i', 'alt', 'pageup', '')
--- keymap('o', 'alt', 'pagedown', '')
 
 -- ------------------
--- my move
+-- Move
 -- ------------------
 keymap('i', 'cmd', 'up', '')
 keymap('k', 'cmd', 'down', '')
@@ -72,42 +53,13 @@ keymap('l', 'cmd', 'right', '')
 keymap('h', 'cmd', 'left', 'cmd')
 keymap(';', 'cmd', 'right', 'cmd')
 
+-- ------------------
+-- Selections
+-- ------------------
 keymap('u', 'cmd', 'left', 'alt+shift')
 keymap('o', 'cmd', 'right', 'alt+shift')
+
 -- ------------------
 -- delete
 -- ------------------
 keymap('n', 'cmd', 'delete', '')
--- keymap('f', 'alt', 'forwarddelete', '')
--- keymap('d', 'alt+shift', 'delete', 'alt')
--- keymap('f', 'alt+shift', 'forwarddelete', 'alt')
-
--- ------------------
--- functionalities
--- ------------------
--- keymap('n', 'alt', 'tab', 'ctrl+shift', REPEAT_SLOWER)
--- keymap('m', 'alt', 'tab', 'ctrl', REPEAT_SLOWER)
-
--- keymap('q', 'alt', 'escape', '', NO_REPEAT)
--- keymap('[', 'ctrl', 'escape', '', NO_REPEAT)
-
--- ------------------
--- system
--- ------------------
-
--- keymap('p', 'alt', 'PLAY', nil, NO_REPEAT)
--- keymap('[', 'alt', 'REWIND', nil, NO_REPEAT)
--- keymap(']', 'alt', 'FAST', nil, NO_REPEAT)
--- keymap(',', 'alt', 'SOUND_DOWN', nil)
--- keymap('.', 'alt', 'SOUND_UP', nil)
--- keymap('/', 'alt', 'MUTE', nil)
-
--- keymap('1', 'alt', 'PLAY', nil, NO_REPEAT)
--- keymap('2', 'alt', 'REWIND', nil, NO_REPEAT)
--- keymap('3', 'alt', 'FAST', nil, NO_REPEAT)
--- keymap('f1', 'alt', 'MUTE', nil)
--- keymap('f2', 'alt', 'SOUND_DOWN', nil)
--- keymap('f3', 'alt', 'SOUND_UP', nil)
-
-
--- hs.hotkey.bind('alt', 'a', hs.hid.capslock.toggle, nil, nil)
