@@ -2,6 +2,9 @@
 
 Inspired by https://github.com/raulchen/dotfiles
 
+# How to use
+
+Copy these files to '~/.hammerspoon' directory
 
 # Cmd based key bindings
 
